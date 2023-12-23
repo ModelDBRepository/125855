@@ -1,0 +1,124 @@
+/********************************
+ *
+ * $LastChangedDate$
+ * $LastChangedBy$
+ *
+ ********************************/
+ 
+
+/***********************
+ *	Pubs
+ ********************************/
+
+  
+  .pubs dt
+  {
+    font-weight: bolder;
+    margin: .75em 0 .5em 0;
+    padding-top: .75em;
+  }
+  
+	.pubs dd
+	{
+		margin: .7em 0 .7em 20px;
+		padding: 0;
+		font-size: .95em;
+	}
+
+
+  .pubs dd+dt
+  {
+    border-top: 1px dashed #BBB;
+  }
+  
+	.pubs a[href$=".pdf"],
+	.pubs a[href$=".ppt"],
+	.pubs a[href$=".doc"],
+	.pubs a[href$=".tar.gz"],
+	.pubs a[href$=".zip"],
+	.pubs a[href^="http"]
+	{
+		padding-left: 18px;
+		background-repeat: no-repeat;
+		background-position: 0% 50%;
+	}
+	
+	.pubs a[href$=".doc"]
+	{
+	  background-image: url("/neuroscience/_shared/img/icons/doc-small.png");
+	}
+	
+	.pubs a[href$=".pdf"]
+	{
+	  background-image: url("/neuroscience/_shared/img/icons/pdf-small.png");
+	}
+	
+	.pubs a[href$=".ppt"]
+	{
+	  background-image: url("/neuroscience/_shared/img/icons/ppt-small.png");
+	}
+	
+	.pubs a[href$=".tar.gz"]
+	{
+	  background-image: url("/neuroscience/_shared/img/icons/tar-small.png");
+	}
+	
+	.pubs a[href$=".tar.gz"]:after
+	{
+	  content: " [tar]";
+	}
+	
+	.pubs a[href$=".zip"]
+	{
+	  background-image: url("/neuroscience/_shared/img/icons/zip-small.png");
+	}  
+	
+	.pubs a[href$=".zip"]:after
+	{
+	  content: " [zip]";
+	}
+	
+	/* External link*/
+	.pubs a[href^="http"]
+	{
+		background-image: url("/neuroscience/_shared/img/icons/webpage.png");
+	}	
+	
+	.pubs a[href^="mailto"]
+	{
+		padding-right: 18px;
+		background: transparent url("/neuroscience/_shared/img/icons/mail.png") no-repeat 100% 50%;
+	}	
+
+	.pubs dd .copyright
+	{
+		font-size: smaller;
+		display: block;
+		margin: .2em 20px .2em 20px;
+		color: #666;
+	}
+	
+	.pubs dd .guidelines
+	{
+		font-size: .85em;
+		display: block;
+		margin: 1.5em 20px .5em -10px;
+	}
+
+/********************************
+ *	Auditory Models
+ ********************************/
+ 	
+ 	#auditoryModels dt
+ 	{
+ 		font-weight: normal;
+ 	}
+	
+	
+/********************************
+ *	Retinal Patterning
+ ********************************/
+ 
+ 	#retinalPatterning dt
+ 	{
+ 	}

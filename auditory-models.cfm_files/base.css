@@ -1,0 +1,501 @@
+/********************************
+ *
+ * $LastChangedDate: 2010-01-27 15:39:33 -0500 (Wed, 27 Jan 2010) $
+ * $LastChangedBy: ozacharias $
+ *
+ ********************************/
+ 	
+@import url("/neuroscience/_shared/css/helpers.css");
+@import url("/neuroscience/_shared/css/pubs.css");
+@import url("/neuroscience/_shared/css/news.css");
+	
+		
+ /********************************
+ *	Hub Unit
+ ********************************/
+
+		.hub-unit
+		{
+			overflow: hidden; /* self clear */
+		}
+		
+		.hub-unit h2
+		{
+			font-size: 1.3em !Important;
+		}
+		
+		.hub-unit a.specialize
+		{
+			float: right;
+			margin-top: 1em;	
+		}
+		
+		.hub-unit a.specialize:after
+		{
+			content: "...";
+		}
+ 
+
+
+/********************************
+ *  Presentations
+ ********************************/
+
+  ul.presentations li
+  {
+    padding: 1em 0;
+  }
+  
+  ul.presentations li+li
+  {
+    border-top: 1px solid #DDD;
+  }
+        
+  ul.presentations .abstract
+  {
+    clear: both;
+    margin: 0 15px;
+  }
+  
+    ul.presentations p + .abstract 
+    {
+      margin-top: 1em;
+    }
+  
+    ul.presentations .abstract h3
+    {
+      font-weight: lighter;
+      margin-top: 0;
+      margin-left: 0;
+    }
+    
+    ul.presentations .abstract p
+    {
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: justify;
+    }
+   
+      
+ /********************************
+ *  Presentations (Formal)
+ ********************************/  
+
+    ul.presentations.formal .title a
+    {
+      padding-left: 18px;
+      font-weight: bolder;
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+    }
+
+
+/********************************
+ *  Presentations (Casual)
+ ********************************/
+  
+  ul.presentations.casual .title a
+  {
+    display: block;
+    padding-left: 38px;
+    font-weight: bolder;
+    min-height: 30px;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+  }
+  
+  ul.presentations.casual .metaInfo
+  {
+   margin: -.1em 0 .65em 0;
+  }
+  
+  ul.presentations.casual .metaInfo + p
+  {
+   clear: both;
+   margin: 0 20px;
+  }
+
+
+
+/********************************
+ *	Projects
+ ********************************/
+ 
+ul#projects
+{
+	margin: 0;
+	padding: 0;
+}
+
+	ul#projects li
+	{
+		background-image: none;
+		overflow: hidden;
+	}
+	
+	#tertiary ul#projects li
+	{
+	  padding: 5px 2px 5px 3px;
+	}
+	
+	#tertiary ul#projects li+li
+	{
+	 margin-top: .6em;
+	}
+	
+	#tertiary ul#projects li.current
+	{
+	 border: 1px solid #AAA;
+	 background: #EEE top left url("/images/bg-hub.gif");
+	}
+	
+	#tertiary ul#projects li.current a:hover
+	{
+	 cursor: default;
+	}
+	
+	#secondary ul#projects .dropShadow
+	{
+		margin-right: 10px;
+	}
+	
+	#tertiary ul#projects .title
+	{
+	  float: right;
+	  width: 80px; 
+	  margin: 0;
+	  font-size: .95em;
+	  text-wrap: normal;
+	  word-wrap: break-word;
+	}
+	
+	ul#projects .title a
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+	#primary ul#projects .dropShadow,
+	#tertiary ul#projects .dropShadow
+	{
+	 margin: .3em 0 0 4px;
+	}
+	
+
+/********************************
+ *  Project Collaborators
+ ********************************/		
+ 
+ul.project-collaborators
+{
+  list-style-type: none;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+		
+	ul.project-collaborators li
+	{
+	  display: inline;
+	  margin: 0; 
+	  padding: 0;
+	  background-image: none;
+	}
+	
+	ul.project-collaborators li+li:before
+	{
+	  content: ", ";
+	}
+		
+		
+/********************************
+ *  Presentations
+ ********************************/	
+		
+  ul.presentations li
+  {
+    overflow: hidden;
+    background: none;
+    padding-left: 0;
+  }
+  
+  ul.presentations .title
+  {
+   font-weight: bolder;
+  }
+		
+  ul.presentations h3
+  {
+   margin-left: 25px;
+  }
+  
+  
+/********************************
+ *	Presentations (Formal)
+ ********************************/
+
+	  ul.presentations.formal .size
+	  {
+	   color: #777;
+	  }
+
+		ul.presentations.formal .presentedOn:before
+		{
+		  content: "(";
+		}
+		
+		ul.presentations.formal .presentedOn:after
+    {
+      content: ")";
+    }
+
+
+/********************************
+ *  Presentations (Casual)
+ ********************************/
+  
+  ul.presentations.casual a.poster
+  {
+   text-decoration: none;
+  }
+  
+  ul.presentations.casual .metaInfo
+  {
+    display: block;
+    float: right;
+  }
+  
+    ul.presentations.casual .metaInfo:before
+    {
+      color: #999;
+      font-size: larger;
+      content: "[";
+    }
+    
+    ul.presentations.casual .metaInfo:after
+    {
+      color: #999;
+      font-size: larger;
+      content: "]";
+    }
+    
+    ul.presentations.casual .metaInfo .presentedOn
+    {
+      font-weight: bolder;
+    }
+
+ 
+/********************************
+ *	VCard
+ ********************************/
+ 
+.vcard
+{
+	overflow: hidden;
+	clear: both;
+}
+
+	.vcard + .vcard
+	{
+		margin-top: .4em;
+		border-top: 1px solid #CCC;
+		padding-top: .8em;
+	}
+
+  .vcard .fn
+ 	{
+ 		font-weight: bolder;
+ 	}
+ 		
+  .vcard .title
+  {
+    margin: .3em 0;
+    font-size: .9em;
+  }
+ 		
+ 	.vcard .adr .locality:after
+ 	{
+ 		content: ",";
+ 	}
+ 	
+ 	.vcard .adr .street-address
+ 	{
+ 	  display: block;
+ 	}
+	 		
+ 	.vcard .adr .type
+ 	{
+ 		display: none;
+ 	}
+ 	
+ 	.vcard .adr .extended-address
+ 	{
+ 		display: block;
+ 	}
+	 	 	
+	.vcard .tel
+	{
+		display: block;
+		font-family: Courier New, Monospace;
+	}
+	
+		.vcard .tel .type
+		{
+			border-bottom: 0;
+		}
+	
+		.vcard .tel .type:after
+		{
+			content: ":";
+		}
+		
+   .vcard .research-focus
+   {
+     display: block;
+     margin-top: 1em;
+     font-size: .95em;
+   }
+   
+   .vcard .research-focus .type
+   {
+    font-weight: bolder;
+    font-style: italic;
+   }
+   
+   .vcard .research-focus .value
+   {
+    color: #555;
+   }
+		
+		    
+/********************************
+ *  Contact
+ ********************************/
+ 
+  .contact .vcard .fn
+  {
+    margin-bottom: .3em;
+  }
+  
+  .contact .vcard .adr
+  {
+    margin-bottom: .3em;
+  }
+ 
+/********************************
+ *	Personnel
+ ********************************/
+ 
+ 	#personnel .vcard .fn
+ 	{
+ 		font-size: 1.1em;
+ 	}
+ 	
+ 	
+/********************************
+ *	Alumni
+ ********************************/
+
+	#personnel.alumni .title
+	{
+	  margin: 0 0 .6em 0;
+		font-size: .9em;
+	}
+
+	#personnel.alumni .currently
+	{
+	  padding: 0;
+	  margin: 0;
+	  font-size: .95em;
+	}
+	
+	
+/********************************
+ *	primaryLabAffiliations
+ ********************************/
+ 
+ul#primaryLabAffiliations
+{
+		overflow: hidden;
+		margin: 0 0 1.7em 4px;
+		padding: 0;
+}
+
+	ul#primaryLabAffiliations li
+	{
+		display: inline;
+		margin: 0;
+		padding: 0;
+		background-image: none;
+		font-family: "Georgia","Times New Roman","Times",serif;
+		font-size: 1.2em;
+		color: #069;
+	}
+	
+	ul#primaryLabAffiliations li a
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+	
+	ul#primaryLabAffiliations li+li:before
+	{
+		content: ", ";
+	}
+	
+
+/********************************
+ *	labAffiliations
+ ********************************/
+
+ul#labAffiliations
+{
+	background: none;
+}	
+
+	ul#labAffiliations li
+	{
+		margin: 0;
+		border: 0;
+		padding: .4em 5px;
+		background: none;
+		font-size: .9em;
+		font-weight: normal;
+	}
+	
+
+/********************************
+ * BME Senior Design Projects
+ ********************************/
+ 
+ ul.bmeSeniorDesignProjects li
+ {
+    background: none; 
+    padding: 0 .2em;
+ }
+
+  ul.bmeSeniorDesignProjects li+li
+  {
+    border-top: 1px solid #CCC;
+  }
+  
+  ul.bmeSeniorDesignProjects .projectIntro.toggler
+  {
+  	/* Override stand toggler backgorund location */
+    background-position: 0 .4em !Important;
+  }
+   
+  ul.bmeSeniorDesignProjects .projectIntro p
+  {
+    margin-left: 5px;
+  }
+
+  ul.bmeSeniorDesignProjects .projectDetails
+  {
+   margin: .75em 15px 0 15px;
+   padding-bottom: .5em;
+  }
+  
+  ul.bmeSeniorDesignProjects .projectDetails p
+  {
+  	margin: 0 10px .75em 10px;
+  	padding: 0;
+  }

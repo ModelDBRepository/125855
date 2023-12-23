@@ -1,0 +1,122 @@
+/********************************
+ *
+ * $LastChangedDate: 2010-01-12 12:29:23 -0500 (Tue, 12 Jan 2010) $
+ * $LastChangedBy: ozacharias $
+ *
+ ********************************/
+
+@import url("/neuroscience/_shared/css/banners.css");
+  
+a.generalize
+{
+	display: block;
+	clear: both;
+}
+
+
+/********************************
+ *  Presentations (Formal)
+ ********************************/  
+        
+    ul.presentations.formal .size:before
+    {
+      color: #999;
+      font-size: larger;
+      font-weight: normal;
+      content: "[";
+    }
+   
+    ul.presentations.formal .size:after
+    {
+      color: #999;
+      font-size: larger;
+      font-weight: normal;
+      content: "]";
+    }
+    
+    ul.presentations.formal a[href$=".doc"]
+    {
+      background-image: url("/neuroscience/_shared/img/icons/doc-small.png");
+    }
+    
+    ul.presentations.formal a[href$=".pdf"]
+    {
+      background-image: url("/neuroscience/_shared/img/icons/pdf-small.png");
+    }
+    
+    ul.presentations.formal a[href$=".ppt"]
+    {
+      background-image: url("/neuroscience/_shared/img/icons/ppt-small.png");
+    }
+    
+    
+ /********************************
+ *  Presentations (Casual)
+ ********************************/
+          
+    ul.presentations.casual a[href$=".doc"]
+    {
+      background-image: url("/neuroscience/_shared/img/icons/doc-medium.png");
+    }
+    
+    ul.presentations.casual a[href$=".pdf"]
+    {
+      background-image: url("/neuroscience/_shared/img/icons/pdf-medium.png");
+    }
+    
+    ul.presentations.casual a[href$=".ppt"]
+    {
+      background-image: url("/neuroscience/_shared/img/icons/ppt-medium.png");
+    }
+
+    
+
+/********************************
+ *	VCard
+ ********************************/
+
+ 	.vcard .org
+ 	{
+ 		display: none;
+ 	}
+ 	
+ 	.vcard .adr
+	{
+		display: block;
+	}
+
+
+/********************************
+ *	Principals
+ ********************************/
+
+	#principals .vcard
+	{
+		margin-top: .6em;
+	}
+
+	#principals .vcard .adr,
+	#principals .vcard .tel,
+	#principals .vcard .email
+	{
+		display: none;
+	}
+
+
+/********************************
+ *	Personnel
+ ********************************/
+ 	
+ 	#personnel .vcard .adr
+ 	{
+ 		padding-top: .75em;
+ 	}
+ 	
+ 	#personnel .vcard .adr .post-office-box,
+ 	#personnel .vcard .adr .street-address,
+ 	#personnel .vcard .adr .locality,
+ 	#personnel .vcard .adr .region,
+ 	#personnel .vcard .adr .postal-code
+ 	{
+ 		display: none;
+ 	}

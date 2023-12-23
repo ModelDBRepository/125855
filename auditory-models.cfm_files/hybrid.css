@@ -1,0 +1,59 @@
+#urmc_nav {
+	background:url(/images/hybrid/bg-nav-bar.jpg) left top no-repeat;}
+
+#urmc_search {
+	float: right;
+	padding: 30px 50px 0 0;
+	text-align: right;
+	vertical-align: middle;
+}
+
+/* --- HYBRID IDENTITY
+----------------------------------------------------- */
+#identity { 
+	background:url(/images/hybrid/bg-header.jpg) left top no-repeat;
+	color: #fff;
+	height: 84px;
+	padding: 0; }
+	
+#hybrid_logo {
+	float: left;
+	width: 265px;
+	height: 73px;
+	margin-top: 5px;
+	padding-left: 25px;
+	text-align: left;
+	vertical-align: middle;
+}
+		
+#hybrid_logo a {
+	display: block;
+	width: 281px;
+	height: 73px; }
+	
+#hybrid_logo a img { display: none; }	
+
+
+#entities {
+	border-left:1px solid #e2e2e2;
+	width: 250px;
+	float: left;
+	margin-top: 12px;
+	padding: 5px 0 5px 25px;
+}	
+
+#entities p {
+	padding:0;
+	margin:0;
+	color:#FFFFFF;
+	line-height: 18px;
+	font-size: 11px;
+	letter-spacing: .1em;
+}
+
+#entities a, #entities a:visited {
+	color:#e2e2e2;
+	text-decoration:none;}
+	
+#entities a:hover {
+	color:#ffffff;}

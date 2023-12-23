@@ -1,0 +1,1 @@
+var addthis_config = {	 ui_header_color: "#ffdd00",	 ui_header_background: "#00467f",	 ui_offset_left: -125,	 ui_offset_top: 5,	 ui_click: true,	 services_compact: 'email,favorites,twitter,delicious,facebook,digg,bitly,blogger,friendster,google,googlereader,linkedin,myspace,newsvine,orkut,plaxo,reddit,slashdot,stumbleupon,tumblr'}

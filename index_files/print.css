@@ -1,0 +1,109 @@
+/********************************
+ *
+ * $LastChangedDate: 2010-01-12 12:29:23 -0500 (Tue, 12 Jan 2010) $
+ * $LastChangedBy: ozacharias $
+ *
+ ********************************/
+
+a.specialize,
+a.generalize
+{
+	display: none;
+}
+
+.nav
+{
+	display: none;
+}
+
+#primary #principals .vcard
+{
+	width: 200px;
+	float: left;
+	clear: none;
+	border: none;
+	margin: 10px;
+}
+
+#secondary .imageWithCaption,
+#secondary .dropShadow
+{
+//	float: none;
+}
+
+#secondary .imageWithCaption a.more-info
+{
+	display: none;
+}
+
+#tertiary 
+{
+	margin-top: .3in;
+    page-break-before: avoid; 
+}
+
+
+ /********************************
+ *  Presentations (Formal)
+ ********************************/  
+        
+    ul.presentations.formal .size
+    {
+        display: none;
+    }
+
+
+ /********************************
+ *	Projects
+ ********************************/
+    
+	ul#projects .title a.specialize
+	{
+		display: block;
+	}
+	
+	#tertiary ul#projects li
+    {
+     width: 200px;
+     float: left;
+    }
+	
+	
+/********************************
+ *	VCard
+ ********************************/
+
+ 	.vcard .org
+ 	{
+ 		display: block;
+ 	}
+ 	
+ 	.vcard .adr
+	{
+		display: block;
+	}
+	
+	.vcard .adr .post-office-box
+	{
+		display: block;
+	}
+ 	
+ 	
+/********************************
+ *	Principals
+ ********************************/
+
+	#principals .vcard .org
+	{
+		clear: both;
+	}
+	
+	
+/********************************
+ *	Personnel
+ ********************************/
+ 
+ 	#personnel .vcard .fn
+ 	{
+ 		font-size: 1.2em;
+ 	}
